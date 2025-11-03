@@ -1,5 +1,4 @@
 
-Install dependencies: pip install web3 cryptography.
-
-Install Solidity compiler (solc): npm install -g solc (requires Node.js).
+ pip install web3 cryptography.
+ npm install -g solc (requires Node.js).
 
