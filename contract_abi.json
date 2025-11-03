@@ -1,0 +1,22 @@
+from solcx import compile_standard, install_solc
+import json
+
+install_solc("0.8.17")
+
+with open("Voting.sol", "r") as file:
+    source_code = file.read()
+
+compiled_sol = compile_standard({
+    "language": "Solidity",
+    "sources": {"Voting.sol": {"content": source_code}},
+    "settings": {
+        "outputSelection": {
+            "*": {"*": ["abi", "evm.bytecode"]}
+        }
+    }
+})
+
+abi = compiled_sol["contracts"]["Voting.sol"]["Voting"]["abi"]
+
+with open("contract_abi.json", "w") as f:
+    json.dump(abi, f)
