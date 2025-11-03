@@ -1,5 +1,5 @@
-Install Python 3.8+.
+
 Install dependencies: pip install web3 cryptography.
-Set up Ganache: Download from trufflesuite.com/ganache and run a local blockchain (default RPC: http://127.0.0.1:8545).
+
 Install Solidity compiler (solc): npm install -g solc (requires Node.js).
-Basic knowledge of Python, Ethereum, and command-line tools.
+
