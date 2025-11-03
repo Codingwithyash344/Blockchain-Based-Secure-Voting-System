@@ -4,7 +4,7 @@ import os
 from solcx import compile_standard
 
 # Connect to Ganache
-w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))
+w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:7545'))
 if not w3.is_connected():
     raise Exception("Cannot connect to Ganache")
 
