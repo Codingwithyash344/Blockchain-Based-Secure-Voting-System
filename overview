@@ -1,0 +1,12 @@
+Project Overview
+Goal: Create a system where voters register, cast votes anonymously, and results are tallied transparently on a blockchain.
+Key Features:
+Voter registration with unique IDs.
+Vote casting (e.g., for candidates).
+Immutable vote storage on blockchain.
+Result querying.
+Tech Stack:
+Blockchain: Ethereum (testnet via Ganache).
+Smart Contract: Solidity (deployed via Python).
+Python Libraries: web3.py (for blockchain interaction), cryptography (for hashing voter IDs).
+Tools: Ganache (local Ethereum simulator), MetaMask (for wallet simulation, optional).
